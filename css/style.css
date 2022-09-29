@@ -156,8 +156,80 @@ footer a:hover {
     bottom: 1.25em;
     right: 0.25em;
     font-size: 300%;
+}
+
+
+/*inicio hero */
+
+.hero {
+    background-image: url(../images/fondo.jpg);
+    height: 60vh;
+    background-size: cover;
+    background-position: center center;
+    background-color: #777;
+    background-blend-mode: multiply;
+    color: white;
+    display: flex;
+}
+
+.hero .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+}
+
+.hero .container h1 {
+    font-family: var(--fuentetitulos);
+    font-size: 2em;
+}
+
+.hero h2 {
+    color: var(--colorprincipal);
+    font-size: 1.25em;
+    margin: var(--margingrid) 0;
+}
+
+.hero p {
+    font-size: 1.15em;
 
 }
+
+.boton {
+    display: inline-block;
+    background-color: var(--colorprincipal);
+    color: white;
+    text-decoration: none;
+    padding: 1.15em;
+    margin: var(--margingrid) 0;
+    border: 1px solid var(--colorprincipal);
+}
+
+.boton:hover {
+    background-color: transparent;
+    color: var(--colorprincipal);
+
+}
+
+.boton:hover i {
+    transition: 0.5s;
+    transform: translateX(5px) scale(1.10);
+}
+
+.hero ul {
+    display: flex;
+    width: 10em;
+    justify-content: space-between;
+
+}
+
+.hero ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+/*fin hero*/
 
 /*fin footer */
 
