@@ -7,10 +7,7 @@
   font-family: "Montserrat", sans-serif";
   color_principal: #fa573a;
   color_azul: #21242e;
-
   */
-
-
 html {
     /*generar animaciones por css en los enlaces de ancla*/
     scroll-behavior: smooth;
@@ -24,7 +21,6 @@ html {
     --margingrid: 1em;
     --fontsize: 1em;
     --anchomaximo: 68.75em;
-
 }
 
 img {
@@ -36,7 +32,6 @@ img {
 .container {
     max-width: var(--anchomaximo);
     margin: 0 auto;
-
 }
 
 body {
@@ -44,10 +39,7 @@ body {
     font-size: var(--fontsize);
 }
 
-
-
 /*inicio header*/
-
 header .nav-top {
     background-color: var(--colorsecundario);
     padding: 1.25em 0em;
@@ -60,13 +52,11 @@ header .nav-top .container {
 
 header .nav-top a {
     text-decoration: none;
-
 }
 
 header .nav-top a i {
     color: var(--colorprincipal);
     font-size: 120%;
-
 }
 
 header .nav-top a span {
@@ -77,7 +67,6 @@ header .nav-top a span {
 header nav {
     background-color: white;
     padding: 1.25em;
-
 }
 
 header nav .container {
@@ -103,7 +92,6 @@ header nav .container .hamburguesa>div {
 header nav .container .menu {
     width: 100%;
     text-align: center;
-
 }
 
 header nav .container .menu li a {
@@ -116,19 +104,14 @@ header nav .container .menu li a {
 
 header nav .container .menu li:last-child a {
     border: 0px;
-
 }
 
 header nav .container .menu li :is(a:hover, .activo) {
     color: var(--colorprincipal);
 }
 
-
-
 /*fin header */
-
 /*inicio footer */
-
 footer {
     background-color: var(--colorsecundario);
     padding: 1.25em 0em;
@@ -138,7 +121,6 @@ footer {
     width: 100%;
     bottom: 0;
 }
-
 
 footer a {
     text-decoration: none;
@@ -159,9 +141,7 @@ footer a:hover {
 }
 
 /*fin footer */
-
 /*inicio hero */
-
 .hero {
     background-image: url(../images/fondo.jpg);
     height: 60vh;
@@ -193,7 +173,6 @@ footer a:hover {
 
 .hero p {
     font-size: 1.15em;
-
 }
 
 .boton {
@@ -209,7 +188,6 @@ footer a:hover {
 .boton:hover {
     background-color: transparent;
     color: var(--colorprincipal);
-
 }
 
 .boton:hover i {
@@ -221,7 +199,6 @@ footer a:hover {
     display: flex;
     width: 10em;
     justify-content: space-between;
-
 }
 
 .hero ul a {
@@ -231,9 +208,6 @@ footer a:hover {
 }
 
 /*fin hero*/
-
-
-
 /*inicio ourservices */
 main section {
     padding: 2.125em 1.5em;
@@ -269,8 +243,6 @@ main section hr {
 }
 
 /*fin ourservices */
-
-
 @media(min-width: 37.5em) {
     /*600px tablet*/
 }
@@ -283,9 +255,7 @@ main section hr {
     }
 
     footer {
-
         text-align: left;
-
     }
 }
 
@@ -294,18 +264,14 @@ main section hr {
     /*1004px pantallas*/
     header nav .container .hamburguesa {
         display: none;
-
     }
 
     header nav .container .menu {
         width: auto;
         text-align: left;
-
-
     }
 
     header nav .container .menu li a {
-
         padding: 0em 1em;
         border-bottom: none;
     }
@@ -313,5 +279,4 @@ main section hr {
     header nav .container .menu li {
         display: inline-block;
     }
-
 }
