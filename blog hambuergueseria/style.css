@@ -273,7 +273,7 @@ footer a:hover {
     display: block;
     color: var(--colorprincipal);
     position: fixed;
-    bottom: 1.25em;
+    bottom: 1.60em;
     right: 0.25em;
     font-size: 300%;
 }
@@ -292,6 +292,7 @@ footer a:hover {
 
 
 
+
     header .nav-top a span {
         display: inline;
     }
@@ -299,6 +300,7 @@ footer a:hover {
     footer {
         text-align: left;
     }
+
 
 }
 
