@@ -100,6 +100,11 @@ header nav .container .menu li a {
     text-decoration: none;
     color: #aaa;
     border-bottom: 1px solid #aaa;
+
+}
+
+header nav .container .menu {
+    list-style: none;
 }
 
 header nav .container .menu li:last-child a {
@@ -135,7 +140,7 @@ footer a:hover {
     display: block;
     color: var(--colorprincipal);
     position: fixed;
-    bottom: 1.25em;
+    bottom: 1.75em;
     right: 0.25em;
     font-size: 300%;
 }
@@ -193,12 +198,15 @@ footer a:hover {
 .boton:hover i {
     transition: 0.5s;
     transform: translateX(5px) scale(1.10);
+
 }
 
 .hero ul {
     display: flex;
     width: 10em;
     justify-content: space-between;
+    list-style: none;
+    padding: 0 3em 0 0;
 }
 
 .hero ul a {

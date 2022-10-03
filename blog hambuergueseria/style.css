@@ -170,7 +170,7 @@ main section hr {
 main section article .salmon {
     background-image: url(../images/news3.jpg);
     background-size: cover;
-    width: calc(100%);
+    width: 25vw;
     height: 20vh;
     margin-top: 3.125em;
 
@@ -196,13 +196,32 @@ main section article .salmon>div {
 main section article .salon {
     background-image: url(../images/news4.jpg);
     background-size: cover;
-    width: calc(100%);
+    width: 25vw;
     height: 20vh;
     margin-top: 3.125em;
 
 }
 
 main section article .salon>div {
+    background-color: #fa573a;
+    width: 33%;
+    height: 50%;
+    color: white;
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center
+}
+
+main section article .vasos {
+    background-image: url(../images/news1.jpg);
+    background-size: cover;
+    width: 25vw;
+    height: 20vh;
+    margin-top: 3.125em;
+
+}
+
+main section article .vasos>div {
     background-color: #fa573a;
     width: 33%;
     height: 50%;
@@ -273,17 +292,23 @@ footer a:hover {
     display: block;
     color: var(--colorprincipal);
     position: fixed;
-    bottom: 1.60em;
+    bottom: 1.75em;
     right: 0.25em;
     font-size: 300%;
 }
 
 /*fin footer */
 
-@media(min-width: 37.5em) {}
+@media(min-width: 37.5em) {
+    /*600px tablet*/
 
-/*600px tablet*/
 
+
+    main section .vasos .our {
+        display: none;
+    }
+
+}
 
 @media(min-width: 48em) {
 
@@ -293,9 +318,13 @@ footer a:hover {
 
 
 
+
+
     header .nav-top a span {
         display: inline;
     }
+
+
 
     footer {
         text-align: left;
