@@ -1,0 +1,369 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css);
+
+* {
+    box-sizing: border-box;
+}
+
+/*
+  font-family: "Handlee", cursive;
+  font-family: "Montserrat", sans-serif";
+  color_principal: #fa573a;
+  color_azul: #21242e;
+  */
+html {
+    /*generar animaciones por css en los enlaces de ancla*/
+    scroll-behavior: smooth;
+}
+
+:root {
+    --fuenteprincipal: 'Montserrat', 'sans-seri';
+    --fuentetitulos: 'Handlee', cursive;
+    --colorprincipal: #fa573a;
+    --colorsecundario: #21242e;
+    --margingrid: 1em;
+    --fontsize: 1em;
+    --anchomaximo: 68.75em;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    max-width: var(--anchomaximo);
+    margin: 0 auto;
+}
+
+body {
+    font-family: var(--fuenteprincipal);
+    font-size: var(--fontsize);
+}
+
+/*inicio header*/
+header .nav-top {
+    background-color: var(--colorsecundario);
+    padding: 1.25em 0em;
+}
+
+header .nav-top .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+header .nav-top a {
+    text-decoration: none;
+}
+
+header .nav-top a i {
+    color: var(--colorprincipal);
+    font-size: 120%;
+}
+
+header .nav-top a span {
+    color: white;
+    display: none;
+}
+
+header nav {
+    background-color: white;
+    padding: 1.25em;
+}
+
+header nav .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header nav .container .logo {
+    max-width: 6.25em;
+}
+
+header nav .container .hamburguesa {
+    width: 1.875em;
+    cursor: pointer;
+}
+
+header nav .container .hamburguesa>div {
+    border-top: 2px solid #aaa;
+    margin-bottom: 0.625em;
+}
+
+header nav .container .menu {
+    width: 100%;
+    text-align: center;
+}
+
+header nav .container .menu li a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    color: #aaa;
+    border-bottom: 1px solid #aaa;
+}
+
+header nav .container .menu li {
+    list-style: none;
+}
+
+header nav .container .menu li:last-child a {
+    border: 0px;
+}
+
+header nav .container .menu li :is(a:hover, .activo) {
+    color: var(--colorprincipal);
+}
+
+/*fin header */
+
+
+/*inicio blog*/
+main section .container .nuestro {
+    display: flex;
+    justify-content: space-around;
+}
+
+main section {
+    padding: 2.125em 1.5em;
+
+
+}
+
+main section article .our {
+    margin: 0 0 0 1.250em
+}
+
+main section .container>h2 {
+    color: black;
+    font-family: var(--fuentetitulos);
+    text-align: center;
+    font-size: 2em;
+}
+
+main section h2 span {
+    color: var(--colorprincipal);
+
+}
+
+main section .underline {
+    position: relative;
+    width: 6.250em;
+    margin: 0 auto;
+    color: var(--colorprincipal);
+    font-weight: 700;
+    text-align: center;
+}
+
+main section .underline span {
+    position: absolute;
+    top: -0.60em;
+}
+
+main section hr {
+    border-color: var(--colorprincipal);
+}
+
+.container .nuestro {
+    max-width: var(--anchomaximo);
+}
+
+main section article .salmon {
+    background-image: url(../images/news3.jpg);
+    background-size: cover;
+    width: 40vw;
+    height: 20vh;
+    margin-top: 3.125em;
+
+
+}
+
+main section article div div {
+    background-color: rgba(255, 0, 0, 0.7);
+    width: 5em;
+    height: 4.5em;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+}
+
+.nuestro article {
+    padding-inline: 1.250em;
+}
+
+
+
+main section article .salon {
+    background-image: url(../images/news4.jpg);
+    background-size: cover;
+    width: 40vw;
+    height: 20vh;
+    margin-top: 3.125em;
+
+}
+
+
+
+main section article .vasos {
+    background-image: url(../images/news1.jpg);
+    background-size: cover;
+    width: 25vw;
+    height: 20vh;
+    margin-top: 3.125em;
+
+}
+
+
+
+section article .our {
+    width: 0 auto;
+    margin: 0 1em;
+}
+
+section article .our h2 {
+    font-family: var(--fuenteprincipal);
+    font-size: 1.5em;
+}
+
+section article .our h3 {
+    font-family: var(--fuenteprincipal);
+    color: var(--colorprincipal);
+    font-size: 1em;
+}
+
+section article.our p {
+    font-family: var(--fuenteprincipal);
+    color: #aaa;
+    font-size: 1em;
+}
+
+section article .our a {
+    font-family: var(--fuenteprincipal);
+    color: var(--colorprincipal);
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 800;
+
+}
+
+
+
+
+
+/*fin blog*/
+
+/*inicio footer */
+footer {
+    background-color: var(--colorsecundario);
+    padding: 1.25em 0em;
+    text-align: center;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: var(--colorprincipal);
+}
+
+.flecha a {
+    display: block;
+    color: var(--colorprincipal);
+    position: fixed;
+    bottom: 1.75em;
+    right: 0.25em;
+    font-size: 300%;
+}
+
+main section article:last-child {
+    display: none;
+}
+
+
+/*fin footer */
+
+@media(min-width: 37.5em) {
+
+    /*600px tablet*/
+
+
+
+
+
+
+}
+
+@media(min-width: 48em) {
+
+    /*768 tabla grande o pantalla pequeña*/
+
+
+
+    main section article:last-child {
+        display: block;
+    }
+
+
+
+    main section article .salmon {
+        width: 25vw;
+    }
+
+    main section article .salon {
+        width: 25vw;
+    }
+
+
+
+    header .nav-top a span {
+        display: inline;
+    }
+
+
+
+    footer {
+        text-align: left;
+    }
+
+
+
+
+}
+
+
+@media(min-width: 62.75em) {
+
+    /*1004px pantallas*/
+    header nav .container .hamburguesa {
+        display: none;
+    }
+
+    header nav .container .menu {
+        width: auto;
+        text-align: left;
+    }
+
+    header nav .container .menu li a {
+        padding: 0em 1em;
+        border-bottom: none;
+    }
+
+    header nav .container .menu li {
+        display: inline-block;
+    }
+
+    main section article:last-child {
+        display: block;
+    }
+
+}
