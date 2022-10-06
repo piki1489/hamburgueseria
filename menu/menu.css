@@ -227,6 +227,15 @@ main section article a {
     display: none;
 }
 
+main section article div {
+
+    position: relative;
+    bottom: 180px;
+    left: 500px;
+
+
+}
+
 
 /*fin menu*/
 
