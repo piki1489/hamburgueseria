@@ -170,7 +170,8 @@ main section .options ul li a {
     text-decoration: none;
     color: white;
     background-size: contain;
-
+    padding: 10px;
+    display: inline-block;
 
 }
 
@@ -199,6 +200,7 @@ main section .today p {
 .offers {
     display: flex;
     flex-direction: column;
+    margin-bottom: 100px;
 }
 
 main section article h3 {
@@ -225,15 +227,34 @@ main section article a {
     font-weight: 800;
 }
 
-.menu article:last-child {
-    display: none;
-}
-
 main section article div {
     text-align: start;
 }
 
+main .menu .menu_options {
+    width: auto;
+}
 
+main .menu .menu_options ul {
+    padding-inline-start: 0px;
+}
+
+main section .options ul li {
+    width: auto;
+}
+
+main .menu .coffy article {
+    display: block;
+}
+
+main .menu .coffy article div {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+main div.coffy>article:nth-child(3) {
+    display: none;
+}
 
 /*fin menu*/
 
@@ -306,9 +327,21 @@ footer a:hover {
         flex-direction: column;
     }
 
-    main section .options ul li {
-        width: 50%;
+    main .menu .coffy article div {
+        margin-left: 0;
+        margin-right: 0;
     }
+
+    main .menu .coffy article {
+        display: flex;
+    }
+
+
+    main div.coffy>article:nth-child(3) {
+        display: none;
+    }
+
+
 }
 
 @media(min-width: 48em) {
@@ -336,15 +369,26 @@ footer a:hover {
         flex-direction: row;
     }
 
-    main section .options ul li {
-        width: 50%;
-    }
 
     .today {}
 
-    .coffy figure {}
+    .coffy figure {
+        width: 195px;
+    }
 
+    main .menu .menu_options {
+        width: 30%;
+    }
 
+    main .menu .coffy article div {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    main .menu .coffy article,
+    main div.coffy>article:nth-child(3) {
+        display: flex;
+    }
 }
 
 @media(min-width: 62.75em) {
@@ -369,19 +413,32 @@ footer a:hover {
     }
 
     .menu article:last-child {
-        display: block;
+        display: flex;
     }
 
     .offers {
         flex-direction: row;
     }
 
-    main section .options ul li {
-        flex-basis: auto;
+    main .menu .menu_options {
         width: 30%;
     }
 
+    main section .options ul li {}
+
     .coffyarticle figure {}
 
-    .coffy article {}
+    .coffy article {
+        display: flex;
+    }
+
+    main .menu .coffy article div {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    main .menu .coffy article,
+    main div.coffy>article:nth-child(3) {
+        display: flex;
+    }
 }
