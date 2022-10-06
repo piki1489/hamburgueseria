@@ -171,6 +171,7 @@ main section .options ul li a {
     color: white;
     background-size: contain;
 
+
 }
 
 main section .options ul li:hover,
@@ -181,7 +182,7 @@ main section .options ul li:first-child {
 
 main section .today h3 {
     color: white;
-    font-size: 1.9em;
+    font-size: 1.5em;
     padding-top: 2em;
 }
 
@@ -190,8 +191,9 @@ main section .today hr {
 }
 
 main section .today p {
-    color: white;
-    font-size: 1em;
+    color: rgb(194, 193, 193);
+    font-size: 0.8em;
+
 }
 
 .offers {
@@ -228,13 +230,9 @@ main section article a {
 }
 
 main section article div {
-
-    position: relative;
-    bottom: 180px;
-    left: 500px;
-
-
+    text-align: start;
 }
+
 
 
 /*fin menu*/
