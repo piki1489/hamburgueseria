@@ -167,6 +167,10 @@ main section hr {
     border-color: var(--colorprincipal);
 }
 
+.container .nuestro {
+    max-width: var(--anchomaximo);
+}
+
 main section article .salmon {
     background-image: url(../images/news3.jpg);
     background-size: cover;
@@ -178,9 +182,9 @@ main section article .salmon {
 }
 
 main section article div div {
-    background-color: #fa573a;
-    width: 50%;
-    height: 30%;
+    background-color: rgba(255, 0, 0, 0.7);
+    width: 5em;
+    height: 4.5em;
     color: white;
     font-weight: 700;
     font-size: 20px;
@@ -289,7 +293,9 @@ main section article:last-child {
 /*fin footer */
 
 @media(min-width: 37.5em) {
+
     /*600px tablet*/
+
 
 
 
@@ -307,12 +313,7 @@ main section article:last-child {
         display: block;
     }
 
-    main section article div div {
-        font-size: 25px;
-        width: 3em;
-        height: 3em;
 
-    }
 
     main section article .salmon {
         width: 25vw;
