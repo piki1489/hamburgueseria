@@ -1,5 +1,5 @@
 @import url(reset.css);
-@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap");
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css);
 
 /*
@@ -9,120 +9,114 @@
   color_azul: #21242e;
   */
 html {
-    /*generar animaciones por css en los enlaces de ancla*/
-    scroll-behavior: smooth;
+  /*generar animaciones por css en los enlaces de ancla*/
+  scroll-behavior: smooth;
 }
 
 :root {
-    --fuenteprincipal: 'Montserrat', 'sans-seri';
-    --fuentetitulos: 'Handlee', cursive;
-    --colorprincipal: #fa573a;
-    --colorsecundario: #21242e;
-    --margingrid: 1em;
-    --fontsize: 1em;
-    --anchomaximo: 68.75em;
+  --fuenteprincipal: "Montserrat", "sans-seri";
+  --fuentetitulos: "Handlee", cursive;
+  --colorprincipal: #fa573a;
+  --colorsecundario: #21242e;
+  --margingrid: 1em;
+  --fontsize: 1em;
+  --anchomaximo: 68.75em;
 }
 
-
-
 img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .container {
-    max-width: var(--anchomaximo);
-    margin: 0 auto;
-
+  max-width: var(--anchomaximo);
+  margin: 0 auto;
 }
 
 body {
-    font-family: var(--fuenteprincipal);
-    font-size: var(--fontsize);
-    background-color: var(--colorsecundario);
-
+  font-family: var(--fuenteprincipal);
+  font-size: var(--fontsize);
+  background-color: var(--colorsecundario);
 }
 
 /*inicio header*/
 header .nav-top {
-    background-color: var(--colorsecundario);
-    padding: 1.25em 0em;
+  background-color: var(--colorsecundario);
+  padding: 1.25em 0em;
 }
 
 header .nav-top .container {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 header .nav-top a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 header .nav-top a i {
-    color: var(--colorprincipal);
-    font-size: 120%;
+  color: var(--colorprincipal);
+  font-size: 120%;
 }
 
 header .nav-top a span {
-    color: white;
-    display: none;
+  color: white;
+  display: none;
 }
 
 header nav {
-    background-color: var(--colorsecundario);
-    padding: 1.25em;
+  background-color: var(--colorsecundario);
+  padding: 1.25em;
 }
 
 header nav .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 header nav .container .logo {
-    max-width: 6.25em;
-
+  width: 3em;
 }
 
 header nav .container .hamburguesa {
-    width: 1.875em;
-    cursor: pointer;
+  width: 1.875em;
+  cursor: pointer;
 }
 
-header nav .container .hamburguesa>div {
-    border-top: 2px solid #aaa;
-    margin-bottom: 0.625em;
+header nav .container .hamburguesa > div {
+  border-top: 2px solid #aaa;
+  margin-bottom: 0.625em;
 }
 
 header nav .container .menu {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 header nav .container .menu li a {
-    display: block;
-    padding: 1em;
-    text-decoration: none;
-    color: #aaa;
-    border-bottom: 1px solid #aaa;
-
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  color: #aaa;
+  border-bottom: 1px solid #aaa;
 }
 
 header nav .container .menu li:last-child a {
-    border: 0px;
+  border: 0px;
 }
 
 header nav .container .menu li :is(a:hover, .activo) {
-    color: var(--colorprincipal);
+  color: var(--colorprincipal);
 }
 
 header nav .container .menu {
-    padding-inline-start: 0;
+  padding-inline-start: 0;
 }
 
 header nav .container .menu li {
-    list-style: none;
+  list-style: none;
 }
 
 /*fin header */
@@ -130,315 +124,298 @@ header nav .container .menu li {
 /*inicio menu*/
 
 main section h2 {
-    color: white;
-    font-family: var(--fuentetitulos);
-    text-align: center;
-    font-size: 2em;
+  color: white;
+  font-family: var(--fuentetitulos);
+  text-align: center;
+  font-size: 2em;
 }
 
 main section h2 span {
-    color: var(--colorprincipal);
+  color: var(--colorprincipal);
 }
 
 main section .underline {
-    position: relative;
-    width: 6.250em;
-    margin: 0 auto;
-    color: var(--colorprincipal);
-    font-weight: 700;
-    text-align: center;
+  position: relative;
+  width: 6.25em;
+  margin: 0 auto;
+  color: var(--colorprincipal);
+  font-weight: 700;
+  text-align: center;
 }
 
 main section .underline span {
-    position: relative;
-    top: -1.15em;
+  position: relative;
+  top: -1.15em;
 }
 
 main section hr {
-    border-color: var(--colorprincipal);
+  border-color: var(--colorprincipal);
 }
 
 main section .options ul li {
-    font-family: var(--fuenteprincipal);
-    font-size: 1em;
-    margin: 1em 0 1em 0;
-    list-style: none;
-    width: 95%;
+  font-family: var(--fuenteprincipal);
+  font-size: 1em;
+  margin: 1em 0 1em 0;
+  list-style: none;
+  width: 95%;
 }
 
 main section .options ul li a {
-    text-decoration: none;
-    color: white;
-    background-size: contain;
-    padding: 10px;
-    display: inline-block;
-
+  text-decoration: none;
+  color: white;
+  background-size: contain;
+  padding: 10px;
+  display: inline-block;
 }
 
 main section .options ul li:hover,
 main section .options ul li:first-child {
-    background-color: var(--colorprincipal);
-    border-radius: 3px;
+  background-color: var(--colorprincipal);
+  border-radius: 3px;
 }
 
 main section .today h3 {
-    color: white;
-    font-size: 1.5em;
-    padding-top: 2em;
+  color: white;
+  font-size: 1.5em;
+  padding-top: 2em;
 }
 
 main section .today hr {
-    margin-right: 87%;
+  margin-right: 87%;
 }
 
 main section .today p {
-    color: rgb(194, 193, 193);
-    font-size: 0.8em;
-
+  color: rgb(194, 193, 193);
+  font-size: 0.8em;
 }
 
 .offers {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
 }
 
 main section article h3 {
-    color: white;
-    font-size: 1em;
+  color: white;
+  font-size: 1em;
 }
 
 main section article h3 span {
-    color: var(--colorprincipal);
-
+  color: var(--colorprincipal);
 }
 
 main section article h4 {
-
-    color: rgb(194, 193, 193);
-    font-family: var(--fuenteprincipal);
-    font-size: 1em;
+  color: rgb(194, 193, 193);
+  font-family: var(--fuenteprincipal);
+  font-size: 1em;
 }
 
 main section article a {
-    color: var(--colorprincipal);
-    text-decoration: none;
-    font-size: 1em;
-    font-weight: 800;
+  color: var(--colorprincipal);
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 800;
 }
 
 main section article div {
-    text-align: start;
+  text-align: start;
 }
 
 main .menu .menu_options {
-    width: auto;
+  width: auto;
 }
 
 main .menu .menu_options ul {
-    padding-inline-start: 0px;
+  padding-inline-start: 0px;
 }
 
 main section .options ul li {
-    width: auto;
+  width: auto;
 }
 
 main .menu .coffy article {
-    display: block;
+  display: block;
 }
 
 main .menu .coffy article div {
-    margin-left: 10%;
-    margin-right: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
-main div.coffy>article:nth-child(3) {
-    display: none;
+main div.coffy > article:nth-child(3) {
+  display: none;
 }
 
 /*fin menu*/
 
-
-
 /*inicio footer */
 footer {
-    background-color: var(--colorsecundario);
-    padding: 1.25em 0em;
-    text-align: center;
-    color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+  background-color: var(--colorsecundario);
+  padding: 1.25em 0em;
+  text-align: center;
+  color: white;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
 
 footer a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 footer a:hover {
-    color: var(--colorprincipal);
+  color: var(--colorprincipal);
 }
 
 .flecha a {
-    display: block;
-    color: var(--colorprincipal);
-    position: fixed;
-    bottom: 1.25em;
-    right: 0.25em;
-    font-size: 300%;
+  display: block;
+  color: var(--colorprincipal);
+  position: fixed;
+  bottom: 1.25em;
+  right: 0.25em;
+  font-size: 300%;
 }
 
 /*fin footer */
 
+@media (min-width: 37.5em) {
+  /*600px tablet*/
+  main section .grid article {
+    width: 50%;
+    border-bottom: none;
+    border-left: 1px solid #aaa;
+    padding: 1.5em;
+    margin-top: 1em;
+  }
 
+  main section .grid article:last-child {
+    width: 100%;
+  }
 
-@media(min-width: 37.5em) {
+  main section .flex {
+    flex-direction: row;
+  }
 
-    /*600px tablet*/
-    main section .grid article {
-        width: 50%;
-        border-bottom: none;
-        border-left: 1px solid #aaa;
-        padding: 1.5em;
-        margin-top: 1em;
-    }
+  main section .flex .imagen {
+    margin: 0 2.5em;
+  }
 
-    main section .grid article:last-child {
-        width: 100%;
-    }
+  .menu article:last-child {
+    display: none;
+  }
 
-    main section .flex {
+  .offers {
+    flex-direction: column;
+  }
 
-        flex-direction: row;
+  main .menu .coffy article div {
+    margin-left: 0;
+    margin-right: 0;
+  }
 
-    }
+  main .menu .coffy article {
+    display: flex;
+  }
 
-    main section .flex .imagen {
-
-        margin: 0 2.5em;
-    }
-
-    .menu article:last-child {
-        display: none;
-    }
-
-    .offers {
-        flex-direction: column;
-    }
-
-    main .menu .coffy article div {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    main .menu .coffy article {
-        display: flex;
-    }
-
-
-    main div.coffy>article:nth-child(3) {
-        display: none;
-    }
-
-
+  main div.coffy > article:nth-child(3) {
+    display: none;
+  }
 }
 
-@media(min-width: 48em) {
+@media (min-width: 48em) {
+  /*768 tabla grande o pantalla pequeña*/
+  header .nav-top a span {
+    display: inline;
+  }
 
-    /*768 tabla grande o pantalla pequeña*/
-    header .nav-top a span {
-        display: inline;
-    }
+  footer {
+    text-align: left;
+  }
 
+  main section .grid :is(article, article:last-child) {
+    width: 33.333%;
+  }
 
-    footer {
-        text-align: left;
-    }
+  .menu article:last-child {
+    display: block;
+  }
 
-    main section .grid :is(article, article:last-child) {
-        width: 33.333%;
+  .offers {
+    flex-direction: row;
+  }
 
-    }
+  .today {
+  }
 
-    .menu article:last-child {
-        display: block;
-    }
+  .coffy figure {
+    width: 195px;
+  }
 
-    .offers {
-        flex-direction: row;
-    }
+  main .menu .menu_options {
+    width: 30%;
+  }
 
+  main .menu .coffy article div {
+    margin-left: 0;
+    margin-right: 0;
+  }
 
-    .today {}
-
-    .coffy figure {
-        width: 195px;
-    }
-
-    main .menu .menu_options {
-        width: 30%;
-    }
-
-    main .menu .coffy article div {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    main .menu .coffy article,
-    main div.coffy>article:nth-child(3) {
-        display: flex;
-    }
+  main .menu .coffy article,
+  main div.coffy > article:nth-child(3) {
+    display: flex;
+  }
 }
 
-@media(min-width: 62.75em) {
+@media (min-width: 62.75em) {
+  /*1004px pantallas*/
+  header nav .container .hamburguesa {
+    display: none;
+  }
 
-    /*1004px pantallas*/
-    header nav .container .hamburguesa {
-        display: none;
-    }
+  header nav .container .menu {
+    width: auto;
+    text-align: left;
+  }
 
-    header nav .container .menu {
-        width: auto;
-        text-align: left;
-    }
+  header nav .container .menu li a {
+    padding: 0em 1em;
+    border-bottom: none;
+  }
 
-    header nav .container .menu li a {
-        padding: 0em 1em;
-        border-bottom: none;
-    }
+  header nav .container .menu li {
+    display: inline-block;
+  }
 
-    header nav .container .menu li {
-        display: inline-block;
-    }
+  .menu article:last-child {
+    display: flex;
+  }
 
-    .menu article:last-child {
-        display: flex;
-    }
+  .offers {
+    flex-direction: row;
+  }
 
-    .offers {
-        flex-direction: row;
-    }
+  main .menu .menu_options {
+    width: 30%;
+  }
 
-    main .menu .menu_options {
-        width: 30%;
-    }
+  main section .options ul li {
+  }
 
-    main section .options ul li {}
+  .coffyarticle figure {
+  }
 
-    .coffyarticle figure {}
+  .coffy article {
+    display: flex;
+  }
 
-    .coffy article {
-        display: flex;
-    }
+  main .menu .coffy article div {
+    margin-left: 0;
+    margin-right: 0;
+  }
 
-    main .menu .coffy article div {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    main .menu .coffy article,
-    main div.coffy>article:nth-child(3) {
-        display: flex;
-    }
+  main .menu .coffy article,
+  main div.coffy > article:nth-child(3) {
+    display: flex;
+  }
 }
